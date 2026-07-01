@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #1f3b57;
+  --color-navy-dark: #16293d;
+  --color-ink: #1a1a1a;
+  --color-slate: #44525e;
+  --color-bg: #faf9f7;
+  --color-line: #e4e1db;
+}
+
+@theme inline {
+  --color-navy: var(--color-navy);
+  --color-navy-dark: var(--color-navy-dark);
+  --color-ink: var(--color-ink);
+  --color-slate: var(--color-slate);
+  --color-bg: var(--color-bg);
+  --color-line: var(--color-line);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-navy);
+  color: white;
+}
